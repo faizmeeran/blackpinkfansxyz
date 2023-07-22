@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "nuxt.config.js",
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["server-middleware/**"]
+      }
+    }
+  ],
+  "env": {
+    "WP_URL": "https://thedramaclubs.com/"
+  },
+  "build": {
+    "env": {
+      "WP_URL": "https://thedramaclubs.com/"
+    }
+  }
+}
